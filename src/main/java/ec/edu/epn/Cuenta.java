@@ -10,5 +10,6 @@ public class Cuenta {
         this.clave = clave;
         this.saldo = saldo;
 
+
     }
 }
