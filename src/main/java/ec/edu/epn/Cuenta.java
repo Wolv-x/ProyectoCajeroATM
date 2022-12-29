@@ -9,5 +9,6 @@ public class Cuenta {
         this.tarjeta = tarjeta;
         this.clave = clave;
         this.saldo = saldo;
+
     }
 }
