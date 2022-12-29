@@ -1,5 +1,4 @@
-package ec.edu.epn.cajero;
-
+package ec.edu.epn;
 public class Menu {
     private Teclado ingreso;
 

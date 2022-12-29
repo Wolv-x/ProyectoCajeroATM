@@ -1,4 +1,4 @@
-package ec.edu.epn.cajero;
+package ec.edu.epn;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package ec.edu.epn.cajero;
+package ec.edu.epn;
 
 public class Cuenta {
     static String tarjeta;
