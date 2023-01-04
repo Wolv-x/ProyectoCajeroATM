@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Creacion del proyecto">
       <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -13,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Teclado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Teclado.java" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +106,7 @@
       <option name="project" value="LOCAL" />
       <updated>1672276091422</updated>
     </task>
+
     <task id="LOCAL-00002" summary="Creacion del proyecto">
       <created>1672276931652</created>
       <option name="number" value="00002" />
@@ -119,6 +122,7 @@
       <updated>1672276986188</updated>
     </task>
     <option name="localTasksCounter" value="4" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,5 +143,6 @@
     <MESSAGE value="Inicialización del proyecto" />
     <MESSAGE value="Creacion del proyecto" />
     <option name="LAST_COMMIT_MESSAGE" value="Creacion del proyecto" />
+
   </component>
 </project>
