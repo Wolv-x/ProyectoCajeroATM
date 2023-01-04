@@ -6,13 +6,9 @@ public class Menu {
         this.ingreso = new Teclado();
     }
 
-    public void iniciarMenu(Cuenta cuenta) {
-        ingreso = new Teclado();
-        System.out.println("Ingrese su número de tarjeta: ");
-        String numero = ingreso.getEntrada();
-        System.out.println("Ingrese su clave: ");
-        String clave = ingreso.getEntrada();
-        if (BaseDeDatos.validarTarjeta(numero, clave)) {
+    public void iniciarMenu() {
+        //ingreso de datos
+        if (validarDatos()) {
             String opc;
 
             do {
@@ -42,4 +38,13 @@ public class Menu {
             ingreso.cerrarTeclado();
         }
     }
+    private boolean validarDatos(){
+        System.out.println("Ingrese su número de tarjeta: ");
+        String numero = ingreso.getEntrada();
+        System.out.println("Ingrese su clave: ");
+        String clave = ingreso.getEntrada();
+
+        return Tarjeta.validarTarjeta(numero, clave);
+    }
+
 }

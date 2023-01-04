@@ -9,5 +9,16 @@ public class Cuenta {
         this.tarjeta = tarjeta;
         this.clave = clave;
         this.saldo = saldo;
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "tarjeta: "+tarjeta+", clave: "+clave+",saldo: "+saldo;
+    }
+
+    public void imprimir() {
+        System.out.println("tarjeta: "+tarjeta+", clave: "+clave+",saldo: "+saldo);
     }
 }
