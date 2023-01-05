@@ -7,6 +7,8 @@ public class BaseDeDatos {
     public  List<Cuenta> cuentas;
     //public Cuenta[] cuentas;
 
+
+
     public BaseDeDatos() {
         /*
         cuentas = new Cuenta[3];
@@ -22,7 +24,7 @@ public class BaseDeDatos {
         cuentas.add(3, new Cuenta("4716050069748112", "987", 43F));
     }
 
-
+    /*
     @Override
     public String toString() {
         String retorno="";
@@ -34,4 +36,6 @@ public class BaseDeDatos {
         return retorno;
 
     }
+     */
+
 }

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Corrección de errores">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Funciones para cambiar clave">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/BaseDeDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/BaseDeDatos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +31,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,7 +51,8 @@
     "WebServerToolWindowFactoryState": "false",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
@@ -140,6 +144,7 @@
     <MESSAGE value="Inicialización del proyecto" />
     <MESSAGE value="Creacion del proyecto" />
     <MESSAGE value="Corrección de errores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrección de errores" />
+    <MESSAGE value="Funciones para cambiar clave" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funciones para cambiar clave" />
   </component>
 </project>
