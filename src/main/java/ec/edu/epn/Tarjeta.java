@@ -2,9 +2,6 @@ package ec.edu.epn;
 
 public class Tarjeta {
     //operaciones generales en la cuenta
-    BaseDeDatos baseDeDatos;
-
-
 
     public static boolean validarTarjeta(String numeroTarjeta, String clave) {
         BaseDeDatos baseDeDatos = new BaseDeDatos();
