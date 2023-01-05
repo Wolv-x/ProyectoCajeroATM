@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Creacion del proyecto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" afterDir="false" />
+    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="actualizacion de las clases, Gabriel Nazate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/BaseDeDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/BaseDeDatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Teclado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Teclado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +89,8 @@
       <workItem from="1672276810829" duration="2408000" />
       <workItem from="1672624272558" duration="8233000" />
       <workItem from="1672695214724" duration="678000" />
-      <workItem from="1672782531680" duration="289000" />
+      <workItem from="1672782531680" duration="341000" />
+      <workItem from="1672871979178" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="Inicialización del proyecto">
       <created>1672276091422</created>
@@ -118,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672276986188</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="actualizacion de las clases, Gabriel Nazate">
+      <created>1672782859114</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672782859114</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicialización del proyecto" />
     <MESSAGE value="Creacion del proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion del proyecto" />
+    <MESSAGE value="actualizacion de las clases, Gabriel Nazate" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizacion de las clases, Gabriel Nazate" />
   </component>
 </project>

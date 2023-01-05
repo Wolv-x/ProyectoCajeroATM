@@ -1,9 +1,9 @@
 package ec.edu.epn;
 
 public class Cuenta {
-    static String tarjeta;
-    static String clave;
-    static float saldo;
+    String tarjeta;
+    String clave;
+    float saldo;
 
     public Cuenta(String tarjeta, String clave, float saldo) {
         this.tarjeta = tarjeta;
@@ -15,10 +15,10 @@ public class Cuenta {
 
     @Override
     public String toString() {
-        return "tarjeta: "+tarjeta+", clave: "+clave+",saldo: "+saldo;
+        return "tarjeta: " + tarjeta + ", clave: " + clave + ",saldo: " + saldo;
     }
 
     public void imprimir() {
-        System.out.println("tarjeta: "+tarjeta+", clave: "+clave+",saldo: "+saldo);
+        System.out.println("tarjeta: " + tarjeta + ", clave: " + clave + ",saldo: " + saldo);
     }
 }
