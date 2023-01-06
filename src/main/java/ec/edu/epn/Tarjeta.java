@@ -27,19 +27,30 @@ public class Tarjeta {
     public void cambiarClave(String numeroTarjeta, String clave) {
         BaseDeDatos baseDeDatos = new BaseDeDatos();
         Teclado ingreso = new Teclado();
-        System.out.println("Ingrese su nueva clave");
-        String claveNueva = ingreso.getEntrada();
 
-        System.out.println("Ingrese nuevamente su nueva clave");
-        String claveNuevaNueva = ingreso.getEntrada();
+        System.out.println("Para cambiar su clave, ingrese su clave actual: ");
+        String claveActual = ingreso.getEntrada();
 
-        if (claveNueva.equals(claveNuevaNueva)) {
-            if (claveNueva.length() == 3 && Teclado.isNumeric(claveNueva)) {
-                if (!(clave.equals(claveNueva))) {
 
-                    System.out.println("#################");
-                    for (int i = 0; i < baseDeDatos.cuentas.size(); i++) {
-                        if (baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta) && baseDeDatos.cuentas.get(i).clave.equals(clave)) {
+
+        for (int i = 0; i < baseDeDatos.cuentas.size(); i++) {
+
+            if (!(baseDeDatos.cuentas.get(i).clave.equals(claveActual))) {
+                System.out.println("No se ha realizado ningún cambio. Saliendo del sistema...."); // print("No se ha realizado ningún cambio);
+                System.exit(0);
+            }
+
+            if (baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta) && baseDeDatos.cuentas.get(i).clave.equals(clave)) {
+
+                System.out.println("Ingrese su nueva clave");
+                String claveNueva = ingreso.getEntrada();
+                System.out.println("Ingrese nuevamente su nueva clave");
+                String claveNuevamenteIngresada = ingreso.getEntrada();
+
+                if (claveNueva.equals(claveNuevamenteIngresada)) {
+                    if (claveNueva.length() == 3 && Teclado.isNumeric(claveNueva)) {
+                        if (!(clave.equals(claveNueva))) {
+                            System.out.println("#################");
                             System.out.println("CUENTA:----");
                             System.out.println(baseDeDatos.cuentas.get(i));
                             System.out.println("TARJETA-----");
@@ -52,21 +63,22 @@ public class Tarjeta {
                             System.out.println(baseDeDatos.cuentas.get(i).getClave());
                             System.out.println("Sus datos son:");
                             System.out.println(baseDeDatos.cuentas.get(i));
+                            System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+                            break;
+                        } else {
+                            System.out.println("La clave ingresada es la misma que la clave actual.");
                         }
+                    } else {
+                        System.out.println("No se ha cambiado la clave");
                     }
-                    System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
                 } else {
-                    System.out.println("La clave ingresada es la misma.");
+                    System.out.println("Las contraseñas no coinciden. Saliendo del sistema...."); //Para más elegancia se puso ese print, pero se puede eliminar
+                    System.exit(0);
                 }
-            } else {
-                System.out.println("No se ha cambiado la clave");
             }
-        } else {
-            System.out.println("Las contraseñas no coinciden. Saliendo del sistema...."); //Para más elegancia se puso ese print, pero se puede eliminar
-            System.exit(0);
         }
-
     }
+
 
 }
 

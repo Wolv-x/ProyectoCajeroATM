@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Funciones para cambiar clave">
+    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Adición de funciones para cambiar clave">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Tarjeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Tarjeta.class" afterDir="false" />
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672962730219</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adición de funciones para cambiar clave">
+      <created>1672974997948</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672974997948</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +171,7 @@
     <MESSAGE value="Creacion del proyecto" />
     <MESSAGE value="Corrección de errores" />
     <MESSAGE value="Funciones para cambiar clave" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funciones para cambiar clave" />
+    <MESSAGE value="Adición de funciones para cambiar clave" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adición de funciones para cambiar clave" />
   </component>
 </project>
