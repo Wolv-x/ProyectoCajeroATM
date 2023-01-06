@@ -3,7 +3,7 @@ package ec.edu.epn;
 public class Cuenta {
     final String tarjeta;
     String clave;
-    private final float saldo;
+    float saldo;
 
     public Cuenta(String tarjeta, String clave, float saldo) {
         this.tarjeta = tarjeta;
@@ -15,6 +15,9 @@ public class Cuenta {
         return clave;
     }
 
+    public float getSaldo() {
+        return saldo;
+    }
     public void setClave(String clave){
         this.clave = clave;
     }

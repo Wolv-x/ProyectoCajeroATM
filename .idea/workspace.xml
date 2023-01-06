@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Adición de funciones para cambiar clave">
+    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cuenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cuenta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Tarjeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Tarjeta.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672974997948</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adición de funciones para cambiar clave (HU12)">
+      <created>1672980586376</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672980586376</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +183,9 @@
     <MESSAGE value="Corrección de errores" />
     <MESSAGE value="Funciones para cambiar clave" />
     <MESSAGE value="Adición de funciones para cambiar clave" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adición de funciones para cambiar clave" />
+    <MESSAGE value="Adición de funciones para cambiar clave (HU12)" />
+    <MESSAGE value="Función para visualizar el saldo disponible (HU7)" />
+    <MESSAGE value="Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas" />
   </component>
 </project>

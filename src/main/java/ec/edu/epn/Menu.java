@@ -14,7 +14,7 @@ public class Menu {
         String numero = ingreso.getEntrada();
         System.out.println("Ingrese su clave: ");
         String clave = ingreso.getEntrada();
-        if (tarjeta.validarTarjeta(numero, clave)) {
+        if (Tarjeta.validarTarjeta(numero, clave)) {
             String opc;
 
             do {
@@ -29,6 +29,8 @@ public class Menu {
                     switch (Integer.parseInt(opc)){
                         case 1 -> System.out.println("TERMINAR");
                         case 2 -> tarjeta.cambiarClave(numero,clave);
+                        case 3 -> tarjeta.retirarDinero(numero);
+                        case 4 -> System.out.println("\tGracias por usar nuestros servicios");
                         default -> System.out.println("Ingrese una opcion valida");
                     }
                 }
