@@ -1,6 +1,7 @@
 package ec.edu.epn;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 public class BaseDeDatos {
@@ -23,19 +24,5 @@ public class BaseDeDatos {
         cuentas.add(2, new Cuenta("4271900557374142", "345", 21F));
         cuentas.add(3, new Cuenta("4716050069748112", "987", 43F));
     }
-
-    /*
-    @Override
-    public String toString() {
-        String retorno="";
-
-        retorno+=cuentas.get(0);
-        for(Cuenta cuenta:cuentas){
-            retorno = String.valueOf(cuenta);
-        }
-        return retorno;
-
-    }
-     */
 
 }

@@ -1,7 +1,9 @@
 package ec.edu.epn;
 
 public class Cuenta {
+
     final String tarjeta;
+
     String clave;
     float saldo;
 
@@ -24,8 +26,7 @@ public class Cuenta {
 
     @Override
     public String toString() {
-        return "tarjeta: "+tarjeta+", clave: "+clave+",saldo: "+saldo;
+        return "tarjeta: " + tarjeta + ", clave: " + clave + ",saldo: " + saldo;
     }
-
 
 }
