@@ -7,12 +7,14 @@
 
     <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cuenta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cuenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cuenta.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Tarjeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Tarjeta.class" afterDir="false" />
+
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -36,17 +38,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+
     <setting file="file://$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
+
+</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+
   <component name="ProjectId" id="2JZBa4vcgkhMEBSbnOsA12A3ZQS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -93,6 +99,7 @@
       </list>
     </recent_temporary>
   </component>
+
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -101,13 +108,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672275784609</updated>
+
       <workItem from="1672276810829" duration="2408000" />
       <workItem from="1672624272558" duration="8233000" />
       <workItem from="1672695214724" duration="678000" />
       <workItem from="1672782531680" duration="341000" />
       <workItem from="1672871979178" duration="733000" />
       <workItem from="1673105422982" duration="911000" />
-    </task>
+ 
+ </task>
     <task id="LOCAL-00001" summary="Inicialización del proyecto">
       <created>1672276091422</created>
       <option name="number" value="00001" />
@@ -115,6 +124,7 @@
       <option name="project" value="LOCAL" />
       <updated>1672276091422</updated>
     </task>
+
     <task id="LOCAL-00002" summary="Creacion del proyecto">
       <created>1672276931652</created>
       <option name="number" value="00002" />
