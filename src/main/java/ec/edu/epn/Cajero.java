@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Cajero {
 
     public static void imprimirRecibo (){
+        //clase teclado
         Scanner scanner = new Scanner(System.in);
         int respuestaRecibo;
 
@@ -16,8 +17,7 @@ public class Cajero {
         respuestaRecibo = scanner.nextInt();
 
         if (respuestaRecibo != 2){
-            //TODO: imprimir el recibo
-            //System.out.println(recibo);
+            System.out.println("Imprimiendo recibo...");
         }
     }
     public static int menu() {
@@ -26,7 +26,7 @@ public class Cajero {
         System.out.println("Escoja el monto ha retirar\n" +
                 "¿Qué monto quiere retirar del cajero?");
 
-        //TODO: Imprimir en consola el saldo disponible
+
         //System.out.println("Su saldo disponible es de: ");
 
         System.out.println("1. 10");
@@ -40,6 +40,7 @@ public class Cajero {
     }
 
     public static int montoHaRetirarCajero() {
+        //teclado
         Scanner scanner = new Scanner(System.in);
         int opcion;
         int monto = 0;
@@ -50,7 +51,9 @@ public class Cajero {
             System.out.println("¿Quiere retirar dinero?" +
                     "1. Si\n" +
                     "2. No\n");
+            //teclado validar si es numero
             x = scanner.nextInt();
+
             if (x == 1) {
                 if (montoMaximoDiario <= 500) {
                     opcion = menu();
