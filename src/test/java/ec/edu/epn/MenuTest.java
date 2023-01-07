@@ -3,17 +3,20 @@ package ec.edu.epn;
 import junit.framework.TestCase;
 import org.junit.*;
 
+import java.util.ArrayList;
+import java.util.List;
+import org.junit.Test;
+
+import org.junit.runners.Parameterized;
+
 public class MenuTest extends TestCase {
 
-    Menu menu;
-    public static void setUpClass() {
-        System.out.println("setUpClass");
-    }
+    Menu menu=null;
 
     @Before
     public void setUp() {
-        System.out.println("setUp()");
         menu = new Menu();
+        System.out.println("setUp()");
     }
 
     @Test
@@ -22,6 +25,12 @@ public class MenuTest extends TestCase {
 
     }
 
+    @Parameterized.Parameters
+    public static Iterable<Object[]> parameters(){
+        List<Object[]> objects = new ArrayList<>();
+
+        return objects;
+    }
     @After
     public void tearDown() {
         System.out.println("tearDown()");

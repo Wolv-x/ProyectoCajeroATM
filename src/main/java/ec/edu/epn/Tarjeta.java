@@ -73,7 +73,7 @@ public class Tarjeta {
         }
     }
 
-    public void consultarSaldo(String numeroTarjeta) {
+    public static void consultarSaldo(String numeroTarjeta) {
         BaseDeDatos baseDeDatos = new BaseDeDatos();
         for (int i = 0; i < baseDeDatos.cuentas.size(); i++) {
             if(baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta)){
