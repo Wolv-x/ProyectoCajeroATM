@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ec/edu/epn/TecladoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Pruebas unitarias">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/BaseDeDatos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cajero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cuenta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Tarjeta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Teclado.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672980586376</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Pruebas unitarias">
+      <created>1673114269277</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673114269277</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +216,7 @@
     <MESSAGE value="Adición de funciones para cambiar clave (HU12)" />
     <MESSAGE value="Función para visualizar el saldo disponible (HU7)" />
     <MESSAGE value="Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas" />
+    <MESSAGE value="Pruebas unitarias" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pruebas unitarias" />
   </component>
 </project>
