@@ -24,6 +24,10 @@ public class Cuenta {
         this.clave = clave;
     }
 
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+
     @Override
     public String toString() {
         return "tarjeta: " + tarjeta + ", clave: " + clave + ",saldo: " + saldo;
