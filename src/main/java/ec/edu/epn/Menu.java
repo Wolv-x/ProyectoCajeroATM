@@ -28,7 +28,7 @@ public class Menu {
                 if (Teclado.isNumeric(opc)){
                     switch (Integer.parseInt(opc)){
                         case 1:
-                             System.out.println("TERMINAR");
+                            tarjeta.consultarSaldo(numero);
                              break;
                         case 2:
                             tarjeta.cambiarClave(numero,clave);
