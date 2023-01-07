@@ -27,24 +27,23 @@ public class Menu {
 
                 if (Teclado.isNumeric(opc)){
                     switch (Integer.parseInt(opc)){
-                        case 1 -> System.out.println("TERMINAR");
-                        case 2 -> tarjeta.cambiarClave(numero,clave);
-                        case 3 -> tarjeta.retirarDinero(numero);
-                        case 4 -> System.out.println("\tGracias por usar nuestros servicios");
-                        default -> System.out.println("Ingrese una opcion valida");
+                        case 1:
+                             System.out.println("TERMINAR");
+                             break;
+                        case 2:
+                            tarjeta.cambiarClave(numero,clave);
+                            break;
+                        case 3:
+                            tarjeta.retirarDinero(numero);
+                            break;
+                        case 4:
+                            System.out.println("\tGracias por usar nuestros servicios");
+                            break;
+                        default:
+                            System.out.println("Ingrese una opcion valida");
+                            break;
                     }
                 }
-                /*
-                if (Teclado.isNumeric(opc)) {
-                    switch (Integer.parseInt(opc)) {
-                        case 1 -> System.out.println(cuenta.consultarSaldo(numero));
-                        case 2 -> tarjeta.cambiarClave(numero, clave);
-                        case 3 -> System.out.println(cuenta.retirarDinero(numero));
-                        case 4 -> System.out.println("\tGracias por usar nuestros servicios");
-                        default -> System.out.println("Ingrese una opcion valida");
-                    }
-                }
-                */
             } while (Integer.parseInt(opc) != 4);
         } else {
             System.out.println("Credenciales erroneas");
