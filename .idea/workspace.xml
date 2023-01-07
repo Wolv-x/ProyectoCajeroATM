@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="actualizacion de las clases, Gabriel Nazate">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="actualizacion de las clases, Gabriel Nazate" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +89,7 @@
       <workItem from="1672695214724" duration="678000" />
       <workItem from="1672782531680" duration="341000" />
       <workItem from="1672871979178" duration="733000" />
+      <workItem from="1673105422982" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="Inicialización del proyecto">
       <created>1672276091422</created>

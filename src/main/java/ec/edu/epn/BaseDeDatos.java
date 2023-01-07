@@ -1,8 +1,7 @@
 package ec.edu.epn;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
+
 import java.util.List;
 
 public class BaseDeDatos {
@@ -26,15 +25,4 @@ public class BaseDeDatos {
 
     }
 
-    @Override
-    public String toString() {
-        String retorno="";
-        retorno+=cuentas.get(0);
-        for(Cuenta cuenta:cuentas){
-            System.out.println(cuenta);
-            retorno+=cuenta+"\n";
-        }
-        return retorno;
-
-    }
 }
