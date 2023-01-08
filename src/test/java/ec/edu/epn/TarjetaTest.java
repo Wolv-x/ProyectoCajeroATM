@@ -23,7 +23,7 @@ public class TarjetaTest {
     }
 
     @Test
-    public void given_creditCardNumber_when_validLenghtAndInvalidPassword_then_OK() {
+    public void given_creditCardNumber_when_validLenghtAndInvalidPassword_then_FALSE() {
         assertFalse(Tarjeta.validarTarjeta("4271900557374142", "12333123123"));
         System.out.println("Successful test N°2...");
     }

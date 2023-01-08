@@ -26,7 +26,6 @@ public class TecladoTest {
     @After
     public void tearDown() {
         System.out.println("tearDown()");
-        teclado.cerrarTeclado();
     }
 
     @AfterClass

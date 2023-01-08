@@ -4,27 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Pruebas adicionales">
+    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Pruebas adicionales en clases: Tarjeta, Teclado y Cajero">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ec/edu/epn/CajeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/edu/epn/CajeroTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ec/edu/epn/TarjetaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/edu/epn/TarjetaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ec/edu/epn/TecladoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/edu/epn/TecladoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProyectoCajeroATM-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/BaseDeDatos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/BaseDeDatos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cajero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cajero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/test/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ec.edu.epn.TecladoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ec.edu.epn.TecladoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ec/edu/epn/TarjetaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ec/edu/epn/TarjetaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ec/edu/epn/TecladoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ec/edu/epn/TecladoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +72,7 @@
       <recent name="ec.edu.pruebas" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TecladoTest">
+  <component name="RunManager" selected="JUnit.TarjetaTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Main" />
       <module name="ProyectoCajeroATM" />
@@ -97,6 +82,18 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CajeroTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoCajeroATM" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="ec.edu.epn.CajeroTest" />
+        <pattern testClass="ec.edu.epn.TarjetaTest" />
+        <pattern testClass="ec.edu.epn.TecladoTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,22 +109,6 @@
       <option name="PACKAGE_NAME" value="ec.edu.epn" />
       <option name="MAIN_CLASS_NAME" value="ec.edu.epn.CajeroTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CajeroTest.give89" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoCajeroATM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ec.edu.epn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ec.edu.epn" />
-      <option name="MAIN_CLASS_NAME" value="ec.edu.epn.CajeroTest" />
-      <option name="METHOD_NAME" value="give89" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TecladoTest" />
         <item itemvalue="JUnit.TarjetaTest" />
-        <item itemvalue="JUnit.CajeroTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CajeroTest.give89" />
+        <item itemvalue="JUnit.TecladoTest" />
+        <item itemvalue="JUnit.CajeroTest" />
+        <item itemvalue="JUnit.CajeroTest and 2 more" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673154965805</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Pruebas adicionales en clases: Tarjeta, Teclado y Cajero">
+      <created>1673216194633</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673216194633</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +304,7 @@
     <MESSAGE value="Pruebas unitarias" />
     <MESSAGE value="Pruebas" />
     <MESSAGE value="Pruebas adicionales" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pruebas adicionales" />
+    <MESSAGE value="Pruebas adicionales en clases: Tarjeta, Teclado y Cajero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pruebas adicionales en clases: Tarjeta, Teclado y Cajero" />
   </component>
 </project>
