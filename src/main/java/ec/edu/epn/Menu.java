@@ -8,12 +8,14 @@ public class Menu {
 
     public void iniciarMenu() {
         //ingreso de datos
+        BaseDeDatos.llenado();
         Tarjeta tarjeta = new Tarjeta();
         ingreso = new Teclado();
         System.out.println("Ingrese su número de tarjeta: ");
         String numero = ingreso.getEntrada();
         System.out.println("Ingrese su clave: ");
         String clave = ingreso.getEntrada();
+
         if (Tarjeta.validarTarjeta(numero, clave)) {
             String opc;
 

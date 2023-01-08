@@ -5,11 +5,11 @@ public class Tarjeta {
 
 
     public static boolean validarTarjeta(String numeroTarjeta, String clave) {
-        BaseDeDatos baseDeDatos = new BaseDeDatos();
+
         if (Teclado.isNumeric(numeroTarjeta) && Teclado.isNumeric(clave)) {
             if (numeroTarjeta.length() == 16 && clave.length() == 3) {
-                for (int i = 0; i < baseDeDatos.cuentas.size(); i++) {
-                    if (baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta) && baseDeDatos.cuentas.get(i).clave.equals(clave)) {
+                for (int i = 0; i < BaseDeDatos.cuentas.size(); i++) {
+                    if (BaseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta) && BaseDeDatos.cuentas.get(i).clave.equals(clave)) {
                         return true;
                     }
                 }
@@ -74,10 +74,11 @@ public class Tarjeta {
     }
 
     public static void consultarSaldo(String numeroTarjeta) {
-        BaseDeDatos baseDeDatos = new BaseDeDatos();
-        for (int i = 0; i < baseDeDatos.cuentas.size(); i++) {
-            if(baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta)){
-                System.out.println("Su saldo disponible es:" +  baseDeDatos.cuentas.get(i).getSaldo());
+        //BaseDeDatos baseDeDatos = new BaseDeDatos();
+        //BaseDeDatos.cuentas;
+        for (int i = 0; i < BaseDeDatos.cuentas.size(); i++) {
+            if(BaseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta)){
+                System.out.println("Su saldo disponible es:" +  BaseDeDatos.cuentas.get(i).getSaldo());
                 break;
             }
         }
