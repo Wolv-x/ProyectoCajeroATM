@@ -1,6 +1,6 @@
 package ec.edu.pruebas;
 
-import ec.edu.epn.Menu;
+
 import ec.edu.epn.Tarjeta;
 
 public class Main {
