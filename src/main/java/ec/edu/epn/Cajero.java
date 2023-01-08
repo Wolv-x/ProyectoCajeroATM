@@ -23,7 +23,6 @@ public class Cajero {
         System.out.println("Escoja el monto ha retirar\n" +
                 "¿Qué monto quiere retirar del cajero?");
 
-
         System.out.println("1. 10");
         System.out.println("2. 50");
         System.out.println("3. 100");

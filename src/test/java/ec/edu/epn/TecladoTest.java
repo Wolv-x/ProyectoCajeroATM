@@ -5,9 +5,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class TecladoTest {
-
     Teclado teclado;
-
     @BeforeClass
     public static void setUpClass() {
         System.out.println("setUpClass");

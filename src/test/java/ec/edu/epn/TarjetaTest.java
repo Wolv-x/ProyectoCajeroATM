@@ -1,5 +1,7 @@
 package ec.edu.epn;
 
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -26,4 +28,13 @@ public class TarjetaTest {
         System.out.println("Successful test N°2...");
     }
 
+    @After
+    public void tearDown() {
+        System.out.println("tearDown()");
+    }
+
+    @AfterClass
+    public static void tearDownClass() {
+        System.out.println("tearDownClass()");
+    }
 }
