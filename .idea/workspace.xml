@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Pruebas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/edu/pruebas/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2023_12_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2023_12_37__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2023_12_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2023_12_40__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ec/edu/epn/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/edu/epn/MenuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +63,9 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ec.edu.epn" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ec.edu.pruebas" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TecladoTest">
@@ -135,7 +133,7 @@
       <workItem from="1672871979178" duration="733000" />
       <workItem from="1673105422982" duration="911000" />
       <workItem from="1673132312299" duration="110000" />
-      <workItem from="1673132436898" duration="1488000" />
+      <workItem from="1673132436898" duration="1708000" />
     </task>
     <task id="LOCAL-00001" summary="Inicialización del proyecto">
       <created>1672276091422</created>
@@ -214,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673130548513</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Pruebas">
+      <created>1673134012792</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673134012792</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
