@@ -50,7 +50,7 @@ public class Cajero {
         }
     }
 
-    public static void montoHaRetirarCajero(String numeroTarjeta) {
+    public static void montoARetirarCajero(String numeroTarjeta) {
         Teclado ingreso = new Teclado();
         BaseDeDatos baseDeDatos = new BaseDeDatos();
 

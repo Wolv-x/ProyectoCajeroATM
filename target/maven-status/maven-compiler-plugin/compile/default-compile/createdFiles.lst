@@ -2,6 +2,7 @@ ec\edu\epn\Cuenta.class
 ec\edu\epn\Main.class
 ec\edu\epn\Menu.class
 ec\edu\epn\Cajero.class
+ec\edu\test\Test.class
 ec\edu\epn\Teclado.class
 ec\edu\epn\Tarjeta.class
 ec\edu\epn\BaseDeDatos.class

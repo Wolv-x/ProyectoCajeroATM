@@ -1,0 +1,152 @@
+Index: src/main/java/ec/edu/epn/Cajero.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ec.edu.epn;\r\n\r\npublic class Cajero {\r\n\r\n    public static void imprimirRecibo() {\r\n        Teclado ingreso = new Teclado();\r\n        String respuestaRecibo;\r\n\r\n        System.out.println(\"¿Quiere que su recibo sea impreso?\\n\" +\r\n                \"1. Si\\n\" +\r\n                \"2. No\");\r\n        respuestaRecibo = ingreso.getEntrada();\r\n\r\n        if (!respuestaRecibo.equals(\"2\")) {\r\n            System.out.println(\"Imprimiendo recibo...\");\r\n        }\r\n    }\r\n\r\n    public static String menu() {\r\n        Teclado ingreso = new Teclado();\r\n        String opcion;\r\n        System.out.println(\"Escoja el monto ha retirar\\n\" +\r\n                \"¿Qué monto quiere retirar del cajero?\");\r\n\r\n        //System.out.println(\"Su saldo disponible es de: \");\r\n\r\n        System.out.println(\"1. 10\");\r\n        System.out.println(\"2. 50\");\r\n        System.out.println(\"3. 100\");\r\n        System.out.println(\"4. 150\");\r\n        System.out.println(\"5. 200\");\r\n        opcion = ingreso.getEntrada();\r\n        return opcion;\r\n    }\r\n\r\n    public static void saldoDisponible(String numeroTarjeta, BaseDeDatos baseDeDatos, float monto) {\r\n        float saldoNuevo;\r\n        for (int i = 0; i < baseDeDatos.cuentas.size(); i++) {\r\n            if (baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta) && (baseDeDatos.cuentas.get(i).saldo >= 0) &&\r\n                    (baseDeDatos.cuentas.get(i).saldo >= monto)) {\r\n                System.out.println(\"Su saldo anterior es: \" + baseDeDatos.cuentas.get(i).saldo);\r\n                saldoNuevo = baseDeDatos.cuentas.get(i).saldo - monto;\r\n                System.out.println(\"Su saldo actual es: \" + saldoNuevo);\r\n                baseDeDatos.cuentas.get(i).setSaldo(saldoNuevo);\r\n            } else {\r\n                if (baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta) && !(baseDeDatos.cuentas.get(i).saldo >= monto)) {\r\n                    System.out.println(\"Saldo insuficiente\");\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    public static void montoHaRetirarCajero(String numeroTarjeta) {\r\n        Teclado ingreso = new Teclado();\r\n        BaseDeDatos baseDeDatos = new BaseDeDatos();\r\n\r\n        String opcion;\r\n        float monto;\r\n        float montoMaximoDiario = 0;\r\n        String respuestaRetirarDinero;\r\n\r\n        do {\r\n\r\n            System.out.println(\"¿Quiere retirar dinero?\\n\" +\r\n                    \"1. Si\\n\" +\r\n                    \"2. No\");\r\n            respuestaRetirarDinero = ingreso.getEntrada();\r\n\r\n\r\n            for (int i = 0; i < baseDeDatos.cuentas.size(); i++) {\r\n                if (baseDeDatos.cuentas.get(i).tarjeta.equals(numeroTarjeta)) {\r\n                    System.out.println(\"----------------------------\");\r\n                    System.out.println(\"Saldo actual: \" + baseDeDatos.cuentas.get(i).saldo);\r\n                }\r\n            }\r\n\r\n            if (respuestaRetirarDinero.equals(\"1\") && Teclado.isNumeric(respuestaRetirarDinero)) {\r\n                if (montoMaximoDiario <= 500F) {\r\n                    opcion = menu();\r\n                    switch (opcion) {\r\n                        case \"1\":\r\n                            monto = 10F;\r\n                            saldoDisponible(numeroTarjeta, baseDeDatos, monto);\r\n                            montoMaximoDiario += 10F;\r\n                            break;\r\n                        case \"2\":\r\n                            monto = 50F;\r\n                            saldoDisponible(numeroTarjeta, baseDeDatos, monto);\r\n                            montoMaximoDiario += 50F;\r\n                            break;\r\n                        case \"3\":\r\n                            monto = 100F;\r\n                            saldoDisponible(numeroTarjeta, baseDeDatos, monto);\r\n                            montoMaximoDiario += 100F;\r\n                            break;\r\n                        case \"4\":\r\n                            monto = 150F;\r\n                            saldoDisponible(numeroTarjeta, baseDeDatos, monto);\r\n                            montoMaximoDiario += 150F;\r\n                            break;\r\n                        case \"5\":\r\n                            monto = 200F;\r\n                            saldoDisponible(numeroTarjeta, baseDeDatos, monto);\r\n                            montoMaximoDiario += 200F;\r\n                            break;\r\n                        default:\r\n                            break;\r\n                    }\r\n                }\r\n            }\r\n        } while (!respuestaRetirarDinero.equals(\"2\"));\r\n        imprimirRecibo();\r\n    }\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/ec/edu/epn/Cajero.java b/src/main/java/ec/edu/epn/Cajero.java
+--- a/src/main/java/ec/edu/epn/Cajero.java	(revision 35406b55df27ac09742263770f41906f9f29a21e)
++++ b/src/main/java/ec/edu/epn/Cajero.java	(date 1673133485819)
+@@ -50,7 +50,7 @@
+         }
+     }
+ 
+-    public static void montoHaRetirarCajero(String numeroTarjeta) {
++    public static void montoARetirarCajero(String numeroTarjeta) {
+         Teclado ingreso = new Teclado();
+         BaseDeDatos baseDeDatos = new BaseDeDatos();
+ 
+Index: src/main/java/ec/edu/epn/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ec.edu.epn;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        Menu menu = new Menu();\r\n        menu.iniciarMenu();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/ec/edu/epn/Main.java b/src/main/java/ec/edu/epn/Main.java
+--- a/src/main/java/ec/edu/epn/Main.java	(revision 35406b55df27ac09742263770f41906f9f29a21e)
++++ b/src/main/java/ec/edu/epn/Main.java	(date 1673136321857)
+@@ -4,5 +4,6 @@
+     public static void main(String[] args) {
+         Menu menu = new Menu();
+         menu.iniciarMenu();
++        //Consultar saldo después de retirar
+     }
+ }
+Index: src/main/java/ec/edu/epn/Menu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ec.edu.epn;\r\npublic class Menu {\r\n    private Teclado ingreso;\r\n\r\n    public Menu() {\r\n        this.ingreso = new Teclado();\r\n    }\r\n\r\n    public void iniciarMenu() {\r\n        //ingreso de datos\r\n        Tarjeta tarjeta = new Tarjeta();\r\n        ingreso = new Teclado();\r\n        System.out.println(\"Ingrese su número de tarjeta: \");\r\n        String numero = ingreso.getEntrada();\r\n        System.out.println(\"Ingrese su clave: \");\r\n        String clave = ingreso.getEntrada();\r\n        if (Tarjeta.validarTarjeta(numero, clave)) {\r\n            String opc;\r\n\r\n            do {\r\n                System.out.println(\"\\tMENU\");\r\n                System.out.println(\"1. Consultar saldo\");\r\n                System.out.println(\"2. Cambiar clave\");\r\n                System.out.println(\"3. Retirar dinero\");\r\n                System.out.println(\"4. Salir\");\r\n                opc = ingreso.getEntrada();\r\n\r\n                if (Teclado.isNumeric(opc)){\r\n                    switch (Integer.parseInt(opc)){\r\n                        case 1:\r\n                            tarjeta.consultarSaldo(numero);\r\n                             break;\r\n                        case 2:\r\n                            tarjeta.cambiarClave(numero,clave);\r\n                            break;\r\n                        case 3:\r\n                            Cajero.montoHaRetirarCajero(numero);\r\n                            break;\r\n                        case 4:\r\n                            System.out.println(\"\\tGracias por usar nuestros servicios\");\r\n                            break;\r\n                        default:\r\n                            System.out.println(\"Ingrese una opcion valida\");\r\n                            break;\r\n                    }\r\n                }\r\n            } while (Integer.parseInt(opc) != 4);\r\n        } else {\r\n            System.out.println(\"Credenciales erroneas\");\r\n            System.out.println(\"\\tGracias por usar nuestros servicios\");\r\n            ingreso.cerrarTeclado();\r\n        }\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/ec/edu/epn/Menu.java b/src/main/java/ec/edu/epn/Menu.java
+--- a/src/main/java/ec/edu/epn/Menu.java	(revision 35406b55df27ac09742263770f41906f9f29a21e)
++++ b/src/main/java/ec/edu/epn/Menu.java	(date 1673133485813)
+@@ -34,7 +34,7 @@
+                             tarjeta.cambiarClave(numero,clave);
+                             break;
+                         case 3:
+-                            Cajero.montoHaRetirarCajero(numero);
++                            Cajero.montoARetirarCajero(numero);
+                             break;
+                         case 4:
+                             System.out.println("\tGracias por usar nuestros servicios");
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"cf287efb-2b81-467e-be60-ce7e4b60d41a\" name=\"Changes\" comment=\"Pruebas\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"JUnit4 Test Class\" />\r\n        <option value=\"JUnit3 Test Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/java/ec/edu/epn/Tarjeta.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2JZBa4vcgkhMEBSbnOsA12A3ZQS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary\": \"JUnit3\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3\": \"junit.framework.TestCase\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4\": \"\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"junit.framework.TestCase\" />\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"ec.edu.epn\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.TecladoTest\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ec.edu.epn.Main\" />\r\n      <module name=\"ProyectoCajeroATM\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"ec.edu.epn.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"test\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ec.edu.epn.test\" />\r\n      <module name=\"ProyectoCajeroATM\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"ec.edu.epn.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TecladoTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ProyectoCajeroATM\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"ec.edu.epn.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"ec.edu.epn\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ec.edu.epn.TecladoTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.TecladoTest\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n        <item itemvalue=\"Application.test\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"cf287efb-2b81-467e-be60-ce7e4b60d41a\" name=\"Changes\" comment=\"\" />\r\n      <created>1672275784609</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1672275784609</updated>\r\n      <workItem from=\"1672276810829\" duration=\"2408000\" />\r\n      <workItem from=\"1672624272558\" duration=\"8233000\" />\r\n      <workItem from=\"1672695214724\" duration=\"678000\" />\r\n      <workItem from=\"1672782531680\" duration=\"341000\" />\r\n      <workItem from=\"1672871979178\" duration=\"733000\" />\r\n      <workItem from=\"1673105422982\" duration=\"911000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Inicialización del proyecto\">\r\n      <created>1672276091422</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672276091422</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Creacion del proyecto\">\r\n      <created>1672276931652</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672276931652</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Creacion del proyecto\">\r\n      <created>1672276986188</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672276986188</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Funciones para cambiar clave\">\r\n      <created>1672962122229</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672962122229</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Funciones para cambiar clave\">\r\n      <created>1672962260791</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672962260791</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Funciones para cambiar clave\">\r\n      <created>1672962730219</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672962730219</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Adición de funciones para cambiar clave\">\r\n      <created>1672974997948</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672974997948</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Adición de funciones para cambiar clave (HU12)\">\r\n      <created>1672980586376</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1672980586376</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Pruebas unitarias\">\r\n      <created>1673114269277</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1673114269277</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Pruebas\">\r\n      <created>1673130447734</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1673130447734</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Pruebas\">\r\n      <created>1673130548513</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1673130548513</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Inicialización del proyecto\" />\r\n    <MESSAGE value=\"Creacion del proyecto\" />\r\n    <MESSAGE value=\"Corrección de errores\" />\r\n    <MESSAGE value=\"Funciones para cambiar clave\" />\r\n    <MESSAGE value=\"Adición de funciones para cambiar clave\" />\r\n    <MESSAGE value=\"Adición de funciones para cambiar clave (HU12)\" />\r\n    <MESSAGE value=\"Función para visualizar el saldo disponible (HU7)\" />\r\n    <MESSAGE value=\"Función para visualizar el saldo disponible (HU7) y corrección de errores al cambiar contraseñas\" />\r\n    <MESSAGE value=\"Pruebas unitarias\" />\r\n    <MESSAGE value=\"Pruebas\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Pruebas\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 35406b55df27ac09742263770f41906f9f29a21e)
++++ b/.idea/workspace.xml	(date 1673136824833)
+@@ -4,7 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Pruebas" />
++    <list default="true" id="cf287efb-2b81-467e-be60-ce7e4b60d41a" name="Changes" comment="Pruebas">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Cajero.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Menu.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cajero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Cajero.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Menu.class" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -39,21 +46,21 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "preferences.lookFeel"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CreateTestDialog.Recents.Supers">
+       <recent name="junit.framework.TestCase" />
+@@ -63,7 +70,7 @@
+       <recent name="ec.edu.epn" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="JUnit.TecladoTest">
++  <component name="RunManager" selected="Application.Main">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Main" />
+       <module name="ProyectoCajeroATM" />
+@@ -107,8 +114,8 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.Main" />
+         <item itemvalue="JUnit.TecladoTest" />
+-        <item itemvalue="Application.Main" />
+         <item itemvalue="Application.test" />
+       </list>
+     </recent_temporary>
+@@ -205,7 +212,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1673130548513</updated>
+     </task>
+-    <option name="localTasksCounter" value="12" />
++    <task id="LOCAL-00012" summary="Pruebas">
++      <created>1673132223095</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1673132223095</updated>
++    </task>
++    <option name="localTasksCounter" value="13" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">

@@ -34,7 +34,7 @@ public class Menu {
                             tarjeta.cambiarClave(numero,clave);
                             break;
                         case 3:
-                            Cajero.montoHaRetirarCajero(numero);
+                            Cajero.montoARetirarCajero(numero);
                             break;
                         case 4:
                             System.out.println("\tGracias por usar nuestros servicios");
