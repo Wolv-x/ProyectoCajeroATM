@@ -64,6 +64,7 @@ public class Cajero {
         System.out.println("¿Quiere retirar dinero?\n" +
                 "1. Si\n" +
                 "2. No");
+
         respuestaRetirarDinero = ingreso.getEntrada();
 
         if (respuestaRetirarDinero.equals("1") && Teclado.isNumeric(respuestaRetirarDinero)) {
