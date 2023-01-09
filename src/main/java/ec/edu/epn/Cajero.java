@@ -10,17 +10,18 @@ public class Cajero {
                 "1. Si\n" +
                 "2. No");
         respuestaRecibo = ingreso.getEntrada();
-        System.out.println("----------------------------");
+
         if (!respuestaRecibo.equals("2")) {
             System.out.println("Imprimiendo recibo...");
         }
+        System.out.println("----------------------------");
     }
 
     public static String menu() {
         System.out.println("----------------------------");
         Teclado ingreso = new Teclado();
         String opcion;
-        System.out.println("Escoja el monto ha retirar\n" +
+        System.out.println("Escoja el monto a retirar\n" +
                 "¿Qué monto quiere retirar del cajero?");
 
         System.out.println("1. 10");
@@ -59,7 +60,6 @@ public class Cajero {
         float monto;
         float montoMaximoDiario = 0;
         String respuestaRetirarDinero;
-        System.out.println("----------------------------");
         System.out.println("¿Quiere retirar dinero?\n" +
                 "1. Si\n" +
                 "2. No");
@@ -67,7 +67,6 @@ public class Cajero {
         respuestaRetirarDinero = ingreso.getEntrada();
 
         if (respuestaRetirarDinero.equals("1") && Teclado.isNumeric(respuestaRetirarDinero)) {
-            System.out.println("----------------------------");
             Tarjeta.consultarSaldo(numeroTarjeta);
 
             if (montoMaximoDiario <= 500F) {

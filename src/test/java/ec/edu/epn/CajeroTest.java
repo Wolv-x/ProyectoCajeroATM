@@ -17,6 +17,7 @@ public class CajeroTest {
         System.out.println("Successful test N°1...");
     }
 
+
     @Test
     public void  given_creditCardNumberAndAmount_when_NotHaveAvailableCredit_thenFALSE(){
         assertFalse(Cajero.saldoDisponible("4271900557374142",100F));

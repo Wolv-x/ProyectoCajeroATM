@@ -7,7 +7,7 @@ public class Menu {
     }
 
     public void iniciarMenu() {
-        //ingreso de datos
+
         BaseDeDatos.llenado();
         Tarjeta tarjeta = new Tarjeta();
         ingreso = new Teclado();
@@ -30,7 +30,7 @@ public class Menu {
                 if (Teclado.isNumeric(opc)){
                     switch (Integer.parseInt(opc)){
                         case 1:
-                            tarjeta.consultarSaldo(numero);
+                            Tarjeta.consultarSaldo(numero);
                              break;
                         case 2:
                             tarjeta.cambiarClave(numero,clave);
@@ -49,12 +49,9 @@ public class Menu {
             } while (Integer.parseInt(opc) != 4);
         } else {
             System.out.println("Credenciales erroneas");
-            System.out.println("\tGracias por usar nuestros servicios");
+            System.out.println("\tGracias por utilizar nuestros servicios");
             ingreso.cerrarTeclado();
         }
     }
-
-
-
 
 }
